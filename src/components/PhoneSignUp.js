@@ -75,14 +75,13 @@ const PhoneSignUp = () => {
           )}
           <form onSubmit={getOTPHandler} className=" pt-8 space-y-5">
             <div className="border"></div>
-            <div className="px-4 py-2">
+            <div className="text-center flex justify-center">
               <PhoneInput
                 inputProps={{
                   name: "phone",
                   required: true,
                   autoFocus: true,
                 }}
-                className="w-[100%]"
                 country={"in"}
                 value={number}
                 onChange={setNumber}
